@@ -4,83 +4,131 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== UNICONS ====================-->
-        
-        
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Responsive Portfolio Website</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">Alexa</a>
+                <div class="nav__menu">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
         </header>
 
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid">
+                    <div>
+                        <p class="section__subtitle">Hi, I'm</p>
+                        <h1>Alexa Smith</h1>
+                        <h2>Frontend developer</h2>
+                        <p>I create beautiful and accessible digital experiences for the web.</p>
+                        <a class="button" href="#contact">Contact me</a>
+                    </div>
+                    <img class="home__img" src="assets/img/perfil.png" alt="Alexa Smith">
+                </div>
             </section>
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                
+                <h2 class="section__title">About me</h2>
+                <span class="section__subtitle">My introduction</span>
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="Workspace with a laptop">
+                    <div>
+                        <p>Web developer with extensive knowledge and years of experience working with web technologies and UI/UX design.</p>
+                        <div class="about__info">
+                            <strong>08+</strong><span>Years experience</span>
+                            <strong>20+</strong><span>Completed projects</span>
+                            <strong>05</strong><span>Companies worked</span>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
-
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+                <div class="skills__container container grid">
+                    <span>HTML &amp; CSS</span><span>JavaScript</span><span>React</span><span>UI/UX design</span>
+                </div>
             </section>
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
-
+                <h2 class="section__title">Experience</h2>
+                <span class="section__subtitle">My journey</span>
+                <p class="container">Frontend developer at a creative studio, building responsive websites and thoughtful interfaces for growing brands.</p>
             </section>
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I offer</span>
+                <div class="services__container container grid">
+                    <article><h3>Web design</h3><p>Modern, responsive interfaces that feel clear and easy to use.</p></article>
+                    <article><h3>Web development</h3><p>Fast, reliable websites built with clean and maintainable code.</p></article>
+                    <article><h3>Brand design</h3><p>Visual systems that help your product communicate with confidence.</p></article>
+                </div>
             </section>
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Recent work</span>
+                <div class="portfolio__container container grid">
+                    <img src="assets/img/portfolio1.jpg" alt="Portfolio project one">
+                    <img src="assets/img/portfolio2.jpg" alt="Portfolio project two">
+                    <img src="assets/img/portfolio3.jpg" alt="Portfolio project three">
+                </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
-
+                <div class="container"><h2>You have a new project?</h2><p>Let's work together and bring your idea to life.</p><a class="button" href="#contact">Contact me</a></div>
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section">
-                
+                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">What clients say</span>
+                <blockquote class="container">“Alexa delivered a thoughtful, polished website and made the whole process feel effortless.”</blockquote>
             </section>
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-
+                <h2 class="section__title">Contact me</h2>
+                <span class="section__subtitle">Get in touch</span>
+                <p class="container">Have a project in mind? Email <a href="mailto:hello@example.com">hello@example.com</a>.</p>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-         
+            <p>Alexa Smith</p>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
