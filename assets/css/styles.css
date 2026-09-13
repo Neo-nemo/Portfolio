@@ -87,7 +87,7 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -110,6 +110,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -135,9 +136,8 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  width: min(100% - 2rem, 1120px);
+  margin-inline: auto;
 }
 
 .grid {
@@ -153,6 +153,7 @@ img {
   z-index: var(--z-fixed);
   background-color: hsla(var(--hue-color), 60%, 99%, .9);
   border-bottom: 1px solid var(--first-color-lighter);
+  backdrop-filter: blur(8px);
 }
 
 .nav {
@@ -160,6 +161,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .nav__logo {
@@ -170,7 +172,9 @@ img {
 
 .nav__links {
   display: flex;
+  align-items: center;
   gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .nav__links a {
@@ -278,6 +282,33 @@ h2 {
   padding: 2rem 0 5rem;
   text-align: center;
   font-size: var(--small-font-size);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .work__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: .75rem 0;
+  }
+
+  .nav__links {
+    justify-content: center;
+  }
+
+  .contact__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /*==================== NAV ====================*/
