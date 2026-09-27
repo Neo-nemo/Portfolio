@@ -3,24 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Muhammed Safeer | M.Tech Mechatronics Engineer</title>
 </head>
 <body>
-    <header class="header">
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
         <nav class="nav container">
             <a class="nav__logo" href="#home">Muhammed Safeer</a>
-            <div class="nav__links">
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#work">Projects</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false">Menu</button>
+                <div class="nav__links" id="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#qualification">Education</a>
+                    <a href="#portfolio">Projects</a>
                 <a href="#contact">Contact</a>
+
+                <u1 class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-estate"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="uil uil-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message"></i> Contactme
+                        </a>
+                    </li>
+                </u1>
+                <i class="uil uil-times nav__close" id="nav-close"></i> Contactme
             </div>
-        </nav>
+
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false">
+                    <i class="uil uil-apps"></i>
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button" aria-label="Change theme"></i>
+            </div>
+            </nav>
     </header>
 
-    <main>
-        <section class="hero section" id="home">
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home hero section" id="home">
             <div class="container hero__content">
                 <div>
                     <p class="eyebrow">M.Tech Mechatronics Engineer</p>
@@ -34,7 +82,8 @@
             </div>
         </section>
 
-        <section class="section" id="about">
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
             <div class="container">
                 <p class="eyebrow">About me</p>
                 <h2>Engineer focused on intelligent systems.</h2>
@@ -43,25 +92,32 @@
             </div>
         </section>
 
-        <section class="section" id="education">
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
             <div class="container">
                 <p class="eyebrow">Education history</p>
                 <h2>Academic background</h2>
-                <div class="work__grid">
-                    <article class="work__card">
+                <div class="portfolio__carousel swiper-container">
+                    <div class="work__grid swiper-wrapper">
+                    <article class="work__card swiper-slide">
                         <div><h3>M.Tech in Mechatronics</h3><p>Vellore Institute of Technology · GPA: 8.27</p><p>System Design and Control, Intelligent Systems, Intelligent Control, IIoT, Robot Dynamics and Programming, Autotronics and Vehicle Intelligence, Advanced Sensors and Instrumentation, Actuators and Drives.</p></div>
                     </article>
-                    <article class="work__card">
+                    <article class="work__card swiper-slide">
                         <div><h3>B.Tech in Mechanical Engineering</h3><p>Cochin University of Science and Technology · CGPA: 7.14</p><p>Electives: Compressible Fluid Flow, Propulsion Engineering, Aerospace Engineering, Hydraulic and Pneumatic Drives, and Mechatronics.</p></div>
                     </article>
-                    <article class="work__card">
+                    <article class="work__card swiper-slide">
                         <div><h3>School education</h3><p>HSS: 85.83% · 10th: 90%</p></div>
                     </article>
+                    </div>
+                    <div class="portfolio__pagination swiper-pagination" aria-label="Project slides"></div>
+                    <button class="portfolio__previous swiper-button-prev" type="button" aria-label="Previous project"></button>
+                    <button class="portfolio__next swiper-button-next" type="button" aria-label="Next project"></button>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
             <div class="container">
                 <p class="eyebrow">Skills</p>
                 <h2>Engineering toolkit</h2>
@@ -70,7 +126,8 @@
             </div>
         </section>
 
-        <section class="section" id="work">
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
             <div class="container">
                 <p class="eyebrow">Projects</p>
                 <h2>Selected engineering work</h2>
@@ -91,7 +148,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="interests section">
             <div class="container">
                 <p class="eyebrow">Beyond engineering</p>
                 <h2>Hobbies</h2>
@@ -99,7 +156,8 @@
             </div>
         </section>
 
-        <section class="section contact" id="contact">
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
             <div class="container contact__box">
                 <div>
                     <p class="eyebrow">Get in touch</p>
@@ -111,8 +169,16 @@
         </section>
     </main>
 
+    <!--==================== FOOTER ====================-->
     <footer class="footer">
         <div class="container"><p>© 2026 Muhammed Safeer · M.Tech Mechatronics</p></div>
     </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <button class="scrollup" id="scroll-up" type="button" aria-label="Scroll to top" title="Scroll to top">↑</button>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
